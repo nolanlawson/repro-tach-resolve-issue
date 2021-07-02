@@ -22,7 +22,7 @@
           "packageVersions": {
             "label": "tip-of-tree",
             "dependencies": {
-              "emoji-picker-element": {
+              "repro-tach-issue": {
                 "kind": "git",
                 "repo": "https://gist.github.com/85bdba522731e3fd7d7f4e5d4cf2233f.git",
                 "ref": "master",

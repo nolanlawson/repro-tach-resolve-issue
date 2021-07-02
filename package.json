@@ -1,8 +1,11 @@
 {
-  "name": "repro-tach-dependency",
+  "name": "repro-tach-issue",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "tach --config ./tachometer.json"
+  },
+  "dependencies": {
+    "tachometer": "^0.5.9"
   }
 }
