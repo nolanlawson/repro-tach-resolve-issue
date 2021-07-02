@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+<script type="module">
+  import test from 'repro-tach-dependency'
+
+  performance.mark('start')
+  test()
+  performance.measure('total', 'start')
+</script>
+</body>
+</html>

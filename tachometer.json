@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Polymer/tachometer/master/config.schema.json",
+  "benchmarks": [
+    {
+      "url": "./benchmark.html",
+      "browser": {
+        "name": "chrome",
+        "headless": true
+      },
+      "measurement": [
+        {
+          "mode": "performance",
+          "entryName": "total"
+        }
+      ],
+      "expand": [
+        {
+          "name": "this-change"
+        },
+        {
+          "name": "tip-of-tree",
+          "packageVersions": {
+            "label": "tip-of-tree",
+            "dependencies": {
+              "emoji-picker-element": {
+                "kind": "git",
+                "repo": "https://gist.github.com/85bdba522731e3fd7d7f4e5d4cf2233f.git",
+                "ref": "master",
+                "setupCommands": [
+                  "npm ci"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
