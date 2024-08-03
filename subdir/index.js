@@ -1,5 +1,5 @@
-import pAny from 'p-any'
+import { debounce } from 'es-toolkit'
 
 performance.mark('start')
-await pAny([new Promise(resolve => setTimeout(resolve))])
+console.log('imported', debounce())
 performance.measure('total', 'start')

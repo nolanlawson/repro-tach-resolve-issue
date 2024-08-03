@@ -6,7 +6,7 @@
     "test": "tach --config ./subdir/tachometer.json"
   },
   "dependencies": {
-    "p-any": "^4.0.0",
+    "es-toolkit": "^1.13.1",
     "tachometer": "0.7.1"
   }
 }
