@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "tach --config ./tachometer.json"
+    "test": "cd subdir && node ../node_modules/.bin/tach --config ./tachometer.json"
   },
   "dependencies": {
-    "tachometer": "^0.5.9"
+    "p-any": "^4.0.0",
+    "tachometer": "file:../tachometer"
   }
 }
